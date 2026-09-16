@@ -5,21 +5,21 @@
 class Studio < Formula
   desc "Design tokens management CLI for Tokens Studio"
   homepage "https://tokens.studio"
-  version "0.2.1"
+  version "0.2.2"
   license "proprietary"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tokens-studio/studio-cli-releases/releases/download/v0.2.1/studio_0.2.1_darwin_amd64.tar.gz"
-      sha256 "4b5d8cdfeef5e47c1ee6a8cc33d2b2559f72054ecff4a24b0af7e9acda81f053"
+      url "https://github.com/tokens-studio/studio-cli-releases/releases/download/v0.2.2/studio_0.2.2_darwin_amd64.tar.gz"
+      sha256 "2d7f3b844e287e8b10a916548400b92e1ec7c2cd99dafd2ca3b71c74f0cfc57e"
 
       define_method(:install) do
         bin.install "studio"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tokens-studio/studio-cli-releases/releases/download/v0.2.1/studio_0.2.1_darwin_arm64.tar.gz"
-      sha256 "20a22c226886c44a28881e9ba6bc50c6b63cb36eb191232e5e598b8dc4396a69"
+      url "https://github.com/tokens-studio/studio-cli-releases/releases/download/v0.2.2/studio_0.2.2_darwin_arm64.tar.gz"
+      sha256 "b5ef090526dc5cd4f42660b129af808b3a14d0ea4692de5813f7bbdb4be60858"
 
       define_method(:install) do
         bin.install "studio"
@@ -29,15 +29,15 @@ class Studio < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tokens-studio/studio-cli-releases/releases/download/v0.2.1/studio_0.2.1_linux_amd64.tar.gz"
-      sha256 "9409bf106bccfb00f9d7a9fb5ae0ef2482697d78819743fd8c7ca32d3713c20c"
+      url "https://github.com/tokens-studio/studio-cli-releases/releases/download/v0.2.2/studio_0.2.2_linux_amd64.tar.gz"
+      sha256 "7902b9561cdf271bd7ed5de0b5951feb3bd5232dfe044413c5008a447d303dfa"
       define_method(:install) do
         bin.install "studio"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tokens-studio/studio-cli-releases/releases/download/v0.2.1/studio_0.2.1_linux_arm64.tar.gz"
-      sha256 "9e439c664b695101d2ccc5a37323342dc03e87c10159c200c652ff7b9359942d"
+      url "https://github.com/tokens-studio/studio-cli-releases/releases/download/v0.2.2/studio_0.2.2_linux_arm64.tar.gz"
+      sha256 "391da91f00ca82bf1672786b3a91c7c7e5c0f1f04ca07c9b1d3ebdff241b99ba"
       define_method(:install) do
         bin.install "studio"
       end
